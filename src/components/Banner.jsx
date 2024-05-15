@@ -76,6 +76,9 @@ const Banner = () => {
               <div>
                 <Image className="w-full" src={BannerImg} alt={BannerImg} />
               </div>
+              <div>
+                <Image className="w-full" src={BannerImg} alt={BannerImg} />
+              </div>
             </Slider>
           </div>
         </Flex>
