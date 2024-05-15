@@ -58,7 +58,7 @@ const Banner = () => {
               <TbCategoryPlus />
               <h3 className=" select-none"> Category </h3>
             </div>
-            <div className={` w-full absolute lg:static z-10 bg-black lg:bg-transparent text-white lg:text-black py-3 lg:p-0 top-[126%] ${CategoryMenu? "left-0": "left-[-110%]"} duration-500 `}>
+            <div className={` w-full absolute lg:static z-10 bg-white top-[126%] ${CategoryMenu? "left-0": "left-[-110%]"} duration-500 `}>
               <Category />
             </div>
           </div>
