@@ -12,6 +12,10 @@ export default {
       },
       colors: {
         primaryWhite: "#FAFAFA",
+        komola: "#DB4444",
+        cardBg: "#F5F5F5",
+        holud: "#FFAD33",
+        dhusor:"#808080"
       },
     },
   },
