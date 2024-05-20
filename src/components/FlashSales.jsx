@@ -86,7 +86,7 @@ const FlashSales = () => {
   return (
     <section className=" mt-10 lg:mt-36">
       <Container>
-        <Flex className=" lg:gap-[87px] items-end mb-10">
+        <Flex className=" justify-between lg:justify-normal lg:gap-[87px] items-end mb-10">
           <Title subtitle="Today’s" title="Flash Sales" />
           <CountDown />
         </Flex>
