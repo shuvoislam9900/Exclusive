@@ -100,8 +100,8 @@ const FlashSales = () => {
           <Product />
           <Product />
         </Slider>
-        <div className=" text-center py-[60px] border-b-2 mb-10">
-        <Link className=" font-popins font-medium text-base bg-komola px-12 py-4 rounded text-white inline-block">View All Products</Link>
+        <div className=" text-center py-8 lg:py-[60px] border-b-2 mb-10">
+        <Link className=" font-popins font-medium text-base bg-komola px-6 lg:px-12 py-2  lg:py-4 rounded text-white inline-block">View All Products</Link>
         </div>
       </Container>
     </section>
