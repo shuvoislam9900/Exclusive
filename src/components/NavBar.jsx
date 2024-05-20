@@ -16,7 +16,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="mt-10 pb-4 border-b relative">
+    <nav className="mt-4 pb-4 border-b relative">
       <Container>
         <Flex className="justify-between items-center">
           <Image src="images/logo.png" />
