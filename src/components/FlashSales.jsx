@@ -70,15 +70,31 @@ const FlashSales = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false
+        }
+      },
+    ]
   };
   return (
     <section className=" mt-10 lg:mt-36">
       <Container>
-        <Flex className=" gap-[87px] items-end mb-10">
+        <Flex className=" lg:gap-[87px] items-end mb-10">
           <Title subtitle="Today’s" title="Flash Sales" />
           <CountDown />
         </Flex>
         <Slider {...settings}>
+          <Product />
+          <Product />
+          <Product />
+          <Product />
           <Product />
           <Product />
           <Product />

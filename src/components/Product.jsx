@@ -9,7 +9,7 @@ import { FiEye } from "react-icons/fi";
 
 const Product = () => {
   return (
-    <div className=" w-[270px]">
+    <div className="w-full p-[2px] lg:p-0 lg:w-[270px]">
       <div className=" group overflow-hidden w-full h-[250px] relative bg-cardBg rounded-[4px] flex justify-center items-center">
         <h5 className=" font-popins text-xs leading-[18px] text-white bg-komola py-1 px-3 rounded absolute top-3 left-3">
           -20%

@@ -11,12 +11,12 @@ const CountDown = () => {
   }, []);
   return (
     <>
-      <Flex className="items-end gap-[17px]">
+      <Flex className="items-end gap-[6px] lg:gap-[17px]">
         <div>
           <h5 className=" font-popins font-medium text-xs leading-[18px] ">
             Days
           </h5>
-          <h2 className=" font-inter font-bold text-[32px] leading-[30px] tracking-[1.28px] ">
+          <h2 className=" font-inter font-bold text-2xl lg:text-[32px] leading-[30px] tracking-[1.28px] ">
             {ticking.days}
           </h2>
         </div>
@@ -27,7 +27,7 @@ const CountDown = () => {
           <h5 className=" font-popins font-medium text-xs leading-[18px] ">
             Hours
           </h5>
-          <h2 className=" font-inter font-bold text-[32px] leading-[30px] tracking-[1.28px] ">
+          <h2 className=" font-inter font-bold text-2xl lg:text-[32px] leading-[30px] tracking-[1.28px] ">
             {ticking.hours}
           </h2>
         </div>
@@ -38,7 +38,7 @@ const CountDown = () => {
           <h5 className=" font-popins font-medium text-xs leading-[18px] ">
             Minutes
           </h5>
-          <h2 className=" font-inter font-bold text-[32px] leading-[30px] tracking-[1.28px] ">
+          <h2 className=" font-inter font-bold text-2xl lg:text-[32px] leading-[30px] tracking-[1.28px] ">
             {ticking.minutes}
           </h2>
         </div>
@@ -49,7 +49,7 @@ const CountDown = () => {
           <h5 className=" font-popins font-medium text-xs leading-[18px] ">
             Seconds
           </h5>
-          <h2 className=" font-inter font-bold text-[32px] leading-[30px] tracking-[1.28px] ">
+          <h2 className=" font-inter font-bold text-2xl lg:text-[32px] leading-[30px] tracking-[1.28px] ">
             {ticking.seconds}
           </h2>
         </div>
