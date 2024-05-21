@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import { TbCategoryPlus } from "react-icons/tb";
 import { useActionData } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -64,21 +65,21 @@ const Banner = () => {
           </div>
           <div className="pt-3 lg:pt-10 w-full lg:w-[76%] mt-0">
             <Slider {...settings}>
-              <div>
+              <Link>
                 <Image className="w-full" src={BannerImg} alt={BannerImg} />
-              </div>
-              <div>
+              </Link>
+              <Link>
                 <Image className="w-full" src={BannerImg} alt={BannerImg} />
-              </div>
-              <div>
+              </Link>
+              <Link>
                 <Image className="w-full" src={BannerImg} alt={BannerImg} />
-              </div>
-              <div>
+              </Link>
+              <Link>
                 <Image className="w-full" src={BannerImg} alt={BannerImg} />
-              </div>
-              <div>
+              </Link>
+              <Link>
                 <Image className="w-full" src={BannerImg} alt={BannerImg} />
-              </div>
+              </Link>
             </Slider>
           </div>
         </Flex>
