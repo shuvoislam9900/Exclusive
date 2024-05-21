@@ -1,17 +1,16 @@
 import React from "react";
 import Container from "./Container";
 import Title from "./Title";
-import CountDown from "./CountDown";
-import Flex from "./Flex";
 import Product from "./Product";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import Button from "./Button";
-import console from "../assets/gamingConsole.png"
-import keyboard from '../assets/keyboard.png'
-import monitor from "../assets/monitor.png";
-import chair from "../assets/chair.png";
+import dogFood from "../assets/dogFood.png"
+import camera from "../assets/camera.png"
+import laptop from "../assets/laptop.png"
+import cream from "../assets/cream.png"
+
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -29,8 +28,8 @@ function SampleNextArrow(props) {
         height: "46px",
         borderRadius: "50%",
         position: "absolute",
-        top:"-24%",
-        right:"0%"
+        top: "-12%",
+        right: "0%",
       }}
       onClick={onClick}
     >
@@ -55,7 +54,7 @@ function SamplePrevArrow(props) {
         height: "46px",
         borderRadius: "50%",
         position: "absolute",
-        top: "-24%",
+        top: "-12%",
         right: "5%",
       }}
       onClick={onClick}
@@ -65,13 +64,16 @@ function SamplePrevArrow(props) {
   );
 }
 
-const FlashSales = () => {
+
+
+const Explore = () => {
   var settings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    rows: 2,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
@@ -106,23 +108,30 @@ const FlashSales = () => {
     ],
   };
   return (
-    <section className=" mt-10 lg:mt-36">
+    <section>
       <Container>
-        <Flex className=" justify-between lg:justify-normal lg:gap-[87px] items-end mb-10">
-          <Title subtitle="Today’s" title="Flash Sales" />
-          <CountDown />
-        </Flex>
+        <div className="mb-10">
+          <Title subtitle="Our Products" title="Explore Our Products" />
+        </div>
         <Slider {...settings}>
-          <Product imgSRC={console} imgAlt={"console"} />
-          <Product imgSRC={keyboard} imgAlt={"keyboard"} />
-          <Product imgSRC={monitor} imgAlt={"monitor"} />
-          <Product imgSRC={chair} imgAlt={"chair"} />
-          <Product imgSRC={console} imgAlt={"console"} />
-          <Product imgSRC={keyboard} imgAlt={"keyboard"} />
-          <Product imgSRC={monitor} imgAlt={"monitor"} />
-          <Product imgSRC={chair} imgAlt={"chair"} />
+          <Product imgSRC={dogFood} imgAlt={dogFood} />
+          <Product imgSRC={dogFood} imgAlt={dogFood} />
+          <Product imgSRC={camera} imgAlt={camera} />
+          <Product imgSRC={camera} imgAlt={camera} />
+          <Product imgSRC={laptop} imgAlt={laptop} />
+          <Product imgSRC={laptop} imgAlt={laptop} />
+          <Product imgSRC={cream} imgAlt={cream} />
+          <Product imgSRC={cream} imgAlt={cream} />
+          <Product imgSRC={dogFood} imgAlt={dogFood} />
+          <Product imgSRC={dogFood} imgAlt={dogFood} />
+          <Product imgSRC={camera} imgAlt={camera} />
+          <Product imgSRC={camera} imgAlt={camera} />
+          <Product imgSRC={laptop} imgAlt={laptop} />
+          <Product imgSRC={laptop} imgAlt={laptop} />
+          <Product imgSRC={cream} imgAlt={cream} />
+          <Product imgSRC={cream} imgAlt={cream} />
         </Slider>
-        <div className=" text-center py-8 lg:py-[60px] border-b-2 mb-8 lg:mb-20">
+        <div className=" text-center py-8 lg:py-[60px]  mb-8 lg:mb-28">
           <Button value={"View All Products"} />
         </div>
       </Container>
@@ -130,4 +139,4 @@ const FlashSales = () => {
   );
 };
 
-export default FlashSales;
+export default Explore;

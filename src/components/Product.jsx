@@ -1,5 +1,5 @@
 import React from "react";
-import gamingConsole from "../assets/gamingConsole.png";
+
 import Image from "./Image";
 import List from "./List";
 import ListItem from "./ListItem";
@@ -7,9 +7,9 @@ import Flex from "./Flex";
 import { FaStar, FaRegHeart } from "react-icons/fa";
 import { FiEye } from "react-icons/fi";
 
-const Product = () => {
+const Product = ({classes, imgSRC, imgAlt}) => {
   return (
-    <div className="w-full p-[2px] lg:p-0 lg:w-[270px]">
+    <div className={` w-full p-[2px] md:p-2 lg:p-4 xl:w-[270px] ${classes}`}>
       <div className=" group overflow-hidden w-full h-[250px] relative bg-cardBg rounded-[4px] flex justify-center items-center">
         <h5 className=" font-popins text-xs leading-[18px] text-white bg-komola py-1 px-3 rounded absolute top-3 left-3">
           -20%
@@ -22,8 +22,10 @@ const Product = () => {
             <FiEye className="text-2xl" />
           </div>
         </div>
-        <Image src={gamingConsole} alt={"gamingConsole"} />
-        <button className=" group-hover:mb-0 duration-500 mb-[-50px] font-popins font-medium text-base text-white bg-black w-full absolute left-0 bottom-0 py-2 rounded-b">Add To Cart</button>
+        <Image src={imgSRC} alt={imgAlt} />
+        <button className=" group-hover:mb-0 duration-500 mb-[-50px] font-popins font-medium text-base text-white bg-black w-full absolute left-0 bottom-0 py-2 rounded-b">
+          Add To Cart
+        </button>
       </div>
       <h2 className=" font-popins font-medium text-base mt-4">
         HAVIT HV-G92 Gamepad
