@@ -26,7 +26,7 @@ const Services = () => {
               <h3 className=" mt-4 lg:mt-6 mb-[6px] lg:mb-2 font-popins font-semibold text-base lg:text-xl text-center">
                 24/7 CUSTOMER SERVICE
               </h3>
-              <h5 className=" font-popins font-normal text-sm leading-[21px] text-center">
+              <h5 className=" font-popins font-normal text-xs lg:text-sm lg:leading-[21px] text-center">
                 Friendly 24/7 customer support
               </h5>
             </div>
@@ -35,7 +35,7 @@ const Services = () => {
               <h3 className=" mt-4 lg:mt-6 mb-[6px] lg:mb-2 font-popins font-semibold text-base lg:text-xl text-center">
                 MONEY BACK GUARANTEE
               </h3>
-              <h5 className=" font-popins font-normal text-sm leading-[21px] text-center">
+              <h5 className=" font-popins font-normal text-xs lg:text-sm lg:leading-[21px] text-center">
                 We reurn money within 30 days
               </h5>
             </div>
