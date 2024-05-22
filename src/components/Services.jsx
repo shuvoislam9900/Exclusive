@@ -13,17 +13,17 @@ const Services = () => {
         <div>
           <Flex className=" justify-around">
             <div>
-              <TbTruckDelivery className=" mx-auto h-[80px] w-[80px] rounded-full p-[8px] border-[10px] border-[#c1c0c1] bg-black text-white " />
-              <h3 className=" mt-6 mb-2 font-popins font-semibold text-xl text-center">
+              <TbTruckDelivery className=" mx-auto h-[60px] lg:h-[80px] w-[60px] lg:w-[80px] rounded-full  p-1 lg:p-[8px] lg:border-[10px] border-[5px] border-[#c1c0c1] bg-black text-white " />
+              <h3 className=" mt-4 lg:mt-6 mb-[6px] lg:mb-2 font-popins font-semibold text-base lg:text-xl text-center">
                 FREE AND FAST DELIVERY
               </h3>
-              <h5 className=" font-popins font-normal text-sm leading-[21px] text-center">
+              <h5 className=" font-popins font-normal text-xs lg:text-sm lg:leading-[21px] text-center">
                 Free delivery for all orders over $140
               </h5>
             </div>
             <div>
-              <TbHeadset className=" size-5 mx-auto h-[80px] w-[80px] rounded-full p-[8px] border-[10px] border-[#c1c0c1] bg-black text-white " />
-              <h3 className=" mt-6 mb-2 font-popins font-semibold text-xl text-center">
+              <TbHeadset className=" mx-auto h-[60px] lg:h-[80px] w-[60px] lg:w-[80px] rounded-full  p-1 lg:p-[8px] lg:border-[10px] border-[5px] border-[#c1c0c1] bg-black text-white " />
+              <h3 className=" mt-4 lg:mt-6 mb-[6px] lg:mb-2 font-popins font-semibold text-base lg:text-xl text-center">
                 24/7 CUSTOMER SERVICE
               </h3>
               <h5 className=" font-popins font-normal text-sm leading-[21px] text-center">
@@ -31,8 +31,8 @@ const Services = () => {
               </h5>
             </div>
             <div>
-              <AiOutlineSafetyCertificate className=" mx-auto h-[80px] w-[80px] rounded-full p-[8px] border-[10px] border-[#c1c0c1] bg-black text-white " />
-              <h3 className=" mt-6 mb-2 font-popins font-semibold text-xl text-center">
+              <AiOutlineSafetyCertificate className=" mx-auto h-[60px] lg:h-[80px] w-[60px] lg:w-[80px] rounded-full  p-1 lg:p-[8px] lg:border-[10px] border-[5px] border-[#c1c0c1] bg-black text-white " />
+              <h3 className=" mt-4 lg:mt-6 mb-[6px] lg:mb-2 font-popins font-semibold text-base lg:text-xl text-center">
                 MONEY BACK GUARANTEE
               </h3>
               <h5 className=" font-popins font-normal text-sm leading-[21px] text-center">
