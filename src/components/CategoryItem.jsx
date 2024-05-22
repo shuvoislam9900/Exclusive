@@ -86,15 +86,25 @@ const CategoryItem = () => {
             breakpoint: 768,
             settings: {
               slidesToShow: 4,
-              slidesToScroll: 2,
-              initialSlide: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
               arrows: false,
             },
           },
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 5,
+              slidesToScroll: 2,
+              initialSlide: 2,
+              arrows: false,
+            },
+          },
+          {
+            breakpoint: 1100,
+            settings: {
+              slidesToShow: 6,
               slidesToScroll: 2,
               initialSlide: 2,
               arrows: false,

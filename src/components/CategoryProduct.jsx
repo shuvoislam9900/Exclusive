@@ -3,7 +3,7 @@ import React from 'react'
 const CategoryProduct = ({icon, catName}) => {
   return (
     <div className='px-3'>
-    <div className="group duration-300 hover:bg-komola w-full lg:w-[170px] h-[145px] py-6 border-2 rounded flex-col">
+    <div className="group duration-300 hover:bg-komola w-full xl:w-[170px] h-[145px] py-6 border-2 rounded flex-col">
       <div className=" duration-300 text-[56px] text-center flex justify-center group-hover:text-white">
         {icon}
       </div>
