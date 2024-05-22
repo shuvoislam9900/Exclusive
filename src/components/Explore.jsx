@@ -6,11 +6,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import Button from "./Button";
-import dogFood from "../assets/dogFood.png"
-import camera from "../assets/camera.png"
-import laptop from "../assets/laptop.png"
-import cream from "../assets/cream.png"
-
+import dogFood from "../assets/dogFood.png";
+import camera from "../assets/camera.png";
+import laptop from "../assets/laptop.png";
+import cream from "../assets/cream.png";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -63,8 +62,6 @@ function SamplePrevArrow(props) {
     </div>
   );
 }
-
-
 
 const Explore = () => {
   var settings = {
@@ -131,7 +128,7 @@ const Explore = () => {
           <Product imgSRC={cream} imgAlt={cream} />
           <Product imgSRC={cream} imgAlt={cream} />
         </Slider>
-        <div className=" text-center py-8 lg:py-[60px]  mb-8 lg:mb-28">
+        <div className=" text-center py-8 lg:py-[60px] lg:mb-[108px]">
           <Button value={"View All Products"} />
         </div>
       </Container>

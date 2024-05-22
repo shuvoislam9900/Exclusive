@@ -27,36 +27,36 @@ const CountdownSS = ({ classes }) => {
 
   return (
     <>
-      <div className={`flex items-end gap-6 ${classes} `}>
-        <div className=" h-16 w-16 rounded-full bg-white p-[15px]">
-          <h2 className=" font-popins font-semibold text-base leading-[20px] text-center">
+      <div className={`flex items-end gap-[11%] ${classes} `}>
+        <div className=" max-w-[62px] max-h-[62px] rounded-full bg-white flex flex-col justify-center items-center p-[13%]">
+          <h2 className=" font-popins font-semibold text-[100%] leading-[20px] text-center">
             {Days}
           </h2>
-          <h5 className=" font-popind text-[11px] leading-[18px] text-center ">
+          <h5 className=" font-popind text-[4px] lg:text-[11px] font-semibold lg:font-normal  leading-[6px] text-center ">
             Days
           </h5>
         </div>
-        <div className=" h-16 w-16 rounded-full bg-white p-[15px]">
-          <h2 className=" font-popins font-semibold text-base leading-[20px] text-center">
+        <div className=" max-w-[62px] max-h-[62px] rounded-full bg-white flex flex-col justify-center items-center p-[13%]">
+          <h2 className=" font-popins font-semibold text-[100%] leading-[20px] text-center">
             {Hours}
           </h2>
-          <h5 className="  font-popind text-[11px] leading-[18px] text-center ">
+          <h5 className="  font-popind text-[4px] lg:text-[11px] font-semibold lg:font-normal  leading-[6px] text-center ">
             Hours
           </h5>
         </div>
-        <div className=" h-16 w-16 rounded-full bg-white p-[15px]">
-          <h2 className=" font-popins font-semibold text-base leading-[20px] text-center">
+        <div className=" max-w-[62px] max-h-[62px] rounded-full bg-white flex flex-col justify-center items-center p-[13%]">
+          <h2 className=" font-popins font-semibold text-[100%] leading-[20px] text-center">
             {Minutes}
           </h2>
-          <h5 className="  font-popind text-[11px] leading-[18px] text-center ">
+          <h5 className="  font-popind text-[4px] lg:text-[11px] font-semibold lg:font-normal  leading-[6px] text-center ">
             Minutes
           </h5>
         </div>
-        <div className=" h-16 w-16 rounded-full bg-white p-[15px]">
-          <h2 className="font-popins font-semibold text-base leading-[20px] text-center">
+        <div className=" max-w-[62px] max-h-[62px] rounded-full bg-white flex flex-col justify-center items-center p-[13%]">
+          <h2 className="font-popins font-semibold text-[100%] leading-[20px] text-center">
             {Seconds}
           </h2>
-          <h5 className=" font-popind text-[11px] leading-[18px] text-center ">
+          <h5 className=" font-popind text-[4px] lg:text-[11px] font-semibold lg:font-normal  leading-[6px] text-center ">
             Seconds
           </h5>
         </div>

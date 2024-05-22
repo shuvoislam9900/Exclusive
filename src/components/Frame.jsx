@@ -12,10 +12,10 @@ const Frame = () => {
       <Container>
         <div className=" relative">
           <Link>
-            <Image className={"flex lg:hidden"} src={frame6} alt={"frame6"} />
+            {<Image className={"flex lg:hidden"} src={frame6} alt={"frame6"} />}
             <Image className={"hidden lg:flex"} src={frame} alt={"frame"} />
             <CountdownSS
-              classes={" hidden lg:flex absolute top-[54%] left-[5%]"}
+              classes={"hidden lg:flex absolute top-[54%] left-[5%]"}
             />
           </Link>
         </div>

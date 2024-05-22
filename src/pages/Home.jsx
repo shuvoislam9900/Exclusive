@@ -5,6 +5,8 @@ import CategoryItem from '../components/CategoryItem'
 import BestSelling from '../components/BestSelling'
 import Frame from '../components/Frame'
 import Explore from '../components/Explore'
+import NewArrival from '../components/NewArrival'
+import Services from '../components/Services'
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
      <BestSelling/>
      <Frame/>
      <Explore/>
+     <NewArrival/>
+     <Services/>
     </>
   )
 }
