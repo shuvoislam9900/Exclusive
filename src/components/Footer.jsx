@@ -115,7 +115,7 @@ const Footer = () => {
               <p className=" font-popins font-medium text-xs leading-[18px] text-[#a8a8a8] mt-4">
                 Save $3 with App New User Only
               </p>
-              <div>
+              <div className="mt-2">
                 <Flex className="justify-between">
                   <Image src={qr} alt={"qr"} />
                   <Flex className="flex-col py-[4px] justify-between">
