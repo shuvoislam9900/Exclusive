@@ -9,6 +9,7 @@ import womens from "../assets/womens.png"
 import speakers from "../assets/speakers.png";
 import perfume from "../assets/perfume.png";
 
+
 const NewArrival = () => {
   return (
     <section>
