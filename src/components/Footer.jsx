@@ -130,13 +130,13 @@ const Footer = () => {
               </div>
               <Flex className="gap-4 lg:gap-6 mt-4 lg:mt-6">
                 <Link>
-                  <RiFacebookLine className="text-white text-sm lg:text-2xl" />
+                  <RiFacebookLine className="text-white text-xl lg:text-2xl" />
                 </Link>
                 <Link>
-                  <CiTwitter className="text-white text-sm lg:text-2xl" />
+                  <CiTwitter className="text-white text-xl lg:text-2xl" />
                 </Link>
                 <Link>
-                  <FiInstagram className="text-white text-sm lg:text-2xl" />
+                  <FiInstagram className="text-white text-xl lg:text-2xl" />
                 </Link>
                 <Link>
                   <RiLinkedinLine className="text-white text-xl lg:text-2xl" />
