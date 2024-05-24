@@ -17,7 +17,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
+    className={className}
       style={{
         ...style,
         display: "flex",
@@ -30,7 +30,8 @@ function SampleNextArrow(props) {
         borderRadius: "50%",
         position: "absolute",
         top:"-24%",
-        right:"0%"
+        right:"0%",
+
       }}
       onClick={onClick}
     >
@@ -72,7 +73,7 @@ const FlashSales = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
+    nextArrow: <SampleNextArrow className="top-10%"/>,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
@@ -82,7 +83,7 @@ const FlashSales = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: false,
-          arrows: false,
+          prevArrow: false
         },
       },
       {
@@ -91,7 +92,7 @@ const FlashSales = () => {
           slidesToShow: 3,
           slidesToScroll: 2,
           initialSlide: 2,
-          arrows: false,
+          
         },
       },
       {
@@ -100,7 +101,7 @@ const FlashSales = () => {
           slidesToShow: 4,
           slidesToScroll: 2,
           initialSlide: 2,
-          arrows: false,
+          
         },
       },
     ],
