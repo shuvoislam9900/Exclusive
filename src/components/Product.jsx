@@ -7,12 +7,20 @@ import Flex from "./Flex";
 import { FaStar, FaRegHeart } from "react-icons/fa";
 import { FiEye } from "react-icons/fi";
 
-const Product = ({classes, imgSRC, imgAlt}) => {
+const Product = ({
+  classes,
+  imgSRC,
+  imgAlt,
+  discount,
+  name,
+  prevPrice,
+  newPrice,
+}) => {
   return (
     <div className={` w-full p-[2px] md:p-2 lg:p-4 xl:w-[270px] ${classes}`}>
       <div className=" group overflow-hidden w-full h-[250px] relative bg-cardBg rounded-[4px] flex justify-center items-center">
         <h5 className=" font-popins text-xs leading-[18px] text-white bg-komola py-1 px-3 rounded absolute top-3 left-3">
-          -20%
+          -20% {discount}
         </h5>
         <div className="absolute top-3 right-3">
           <div className=" bg-white rounded-full p-[5px]">
@@ -28,15 +36,14 @@ const Product = ({classes, imgSRC, imgAlt}) => {
         </button>
       </div>
       <h2 className=" font-popins font-medium text-base mt-4">
-        HAVIT HV-G92 Gamepad
+        HAVIT HV-G92 Gamepad{name}
       </h2>
       <Flex className="gap-3 items-center my-2">
-        {" "}
         <h3 className=" font-popins font-medium text-base text-komola ">
-          $120
+          $120 {newPrice}
         </h3>
         <del className=" font-popins font-medium text-base text-dhusor ">
-          $160
+          $160{prevPrice}
         </del>
       </Flex>
       <List className={"flex gap-1"}>
