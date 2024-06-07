@@ -20,10 +20,10 @@ let handleProductPerPage = (e) =>{
           onChange={handleProductPerPage}
           className="rounded font-popins font-normal text-sm leading-[21px ] w-[78px] border-2  focus:outline-none"
         >
-          <option selected value="6">
-            6
+          <option value="6">6</option>
+          <option selected value="9">
+            9
           </option>
-          <option value="9">9</option>
           <option value="12">12</option>
           <option value="15">15</option>
           <option value="18">18</option>
