@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className=" bg-black mt-8 lg:mt-[140px]">
       <Container>
         <div className="lg:pt-[80px] pt-7 lg:mb-[60px]">
-          <Flex className="justify-around flex-wrap sm:gap-4 md:gap-4 lg:gap-4">
+          <Flex className="justify-between flex-wrap sm:gap-4 md:gap-4 lg:gap-4">
             <div className="max-w-[217px] mb-8">
               <h2 className=" font-inter font-bold text-2xl leading-6 tracking-wider text-white">
                 Exclusive

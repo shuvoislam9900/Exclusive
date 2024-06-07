@@ -6,11 +6,13 @@ import Flex from './Flex';
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
+import Breadcrumb from './Breadcrumb';
 
 const SignUp = () => {
   return (
     <section className="">
       <Container>
+        <Breadcrumb/>
         <div className="relative mt-[60px]">
           <Image
             src={bgImg}
@@ -48,7 +50,7 @@ const SignUp = () => {
               <h5 className=" font-popins font-normal text-base text-[#4c4c4c]">
                 Already have account?
               </h5>
-              <Link className="ml-4 font-popins font-medium text-base text-[#4c4c4c] border-b-2 border-[#808080]">
+              <Link to='/login' className="ml-4 font-popins font-medium text-base text-[#4c4c4c] border-b-2 border-[#808080]">
                 Log in
               </Link>
             </Flex>

@@ -5,12 +5,13 @@ import Container from './Container';
 import Flex from './Flex';
 import Button from "./Button";
 import { Link } from "react-router-dom";
-import { FcGoogle } from "react-icons/fc";
+import Breadcrumb from "./Breadcrumb"
 
 const Login = () => {
   return (
     <section className="">
       <Container>
+        <Breadcrumb/>
         <div className="relative mt-[60px]">
           <Image
             src={bgImg}

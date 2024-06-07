@@ -11,7 +11,7 @@ const Services = () => {
     <section className=" mt-8 lg:mt-36">
       <Container>
         <div>
-          <Flex className=" justify-between lg:justify-around">
+          <Flex className=" gap-8 lg:justify-around flex-wrap justify-center">
             <div>
               <TbTruckDelivery className=" mx-auto h-[60px] lg:h-[80px] w-[60px] lg:w-[80px] rounded-full  p-1 lg:p-[8px] lg:border-[10px] border-[5px] border-[#c1c0c1] bg-black text-white " />
               <h3 className=" mt-4 lg:mt-6 mb-[6px] lg:mb-2 font-popins font-semibold text-base lg:text-xl text-center">

@@ -6,6 +6,7 @@ import ListItem from "./ListItem";
 import Flex from "./Flex";
 import { FaStar, FaRegHeart } from "react-icons/fa";
 import { FiEye } from "react-icons/fi";
+import { Rate } from "antd";
 
 const Product = ({
   classes,
@@ -15,12 +16,18 @@ const Product = ({
   name,
   prevPrice,
   newPrice,
+  starCount,
+  rating
 }) => {
   return (
     <div className={` w-full p-[2px] md:p-2 lg:p-4 xl:w-[270px] ${classes}`}>
       <div className=" group overflow-hidden w-full h-[250px] relative bg-cardBg rounded-[4px] flex justify-center items-center">
-        <h5 className=" font-popins text-xs leading-[18px] text-white bg-komola py-1 px-3 rounded absolute top-3 left-3">
-          -20% {discount}
+        <h5
+          className={`font-popins text-xs leading-[18px] text-white bg-komola py-1 px-3 rounded absolute top-3 left-3 ${
+            discount == "" ? "hidden" : "flex"
+          }`}
+        >
+          {discount}
         </h5>
         <div className="absolute top-3 right-3">
           <div className=" bg-white rounded-full p-[5px]">
@@ -35,37 +42,20 @@ const Product = ({
           Add To Cart
         </button>
       </div>
-      <h2 className=" font-popins font-medium text-base mt-4">
-        HAVIT HV-G92 Gamepad{name}
-      </h2>
+      <h2 className=" font-popins font-medium text-base mt-4">{name}</h2>
       <Flex className="gap-3 items-center my-2">
         <h3 className=" font-popins font-medium text-base text-komola ">
-          $120 {newPrice}
+          {newPrice}
         </h3>
         <del className=" font-popins font-medium text-base text-dhusor ">
-          $160{prevPrice}
+          {prevPrice}
         </del>
       </Flex>
       <List className={"flex gap-1"}>
-        <ListItem>
-          <FaStar className="text-holud" />
-        </ListItem>
-        <ListItem>
-          <FaStar className="text-holud" />
-        </ListItem>
-        <ListItem>
-          <FaStar className="text-holud" />
-        </ListItem>
-        <ListItem>
-          <FaStar className="text-holud" />
-        </ListItem>
-        <ListItem>
-          <FaStar className="text-holud" />
-        </ListItem>
-        <ListItem>
-          <FaStar className="text-holud" />
-        </ListItem>
-        <h3 className=" font-popins font-semibold text-sm text-dhusor">(88)</h3>
+        <Rate allowHalf defaultValue={rating} />
+        <h3 className=" font-popins font-semibold text-sm text-dhusor">
+          ({starCount})
+        </h3>
       </List>
     </div>
   );

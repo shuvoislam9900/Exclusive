@@ -8,8 +8,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import Button from "./Button";
-import console from "../assets/gamingConsole.png"
-import keyboard from '../assets/keyboard.png'
+import console from "../assets/gamingConsole.png";
+import keyboard from "../assets/keyboard.png";
 import monitor from "../assets/monitor.png";
 import chair from "../assets/chair.png";
 
@@ -17,7 +17,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-    className={className}
+      className={className}
       style={{
         ...style,
         display: "flex",
@@ -29,9 +29,8 @@ function SampleNextArrow(props) {
         height: "46px",
         borderRadius: "50%",
         position: "absolute",
-        top:"-24%",
-        right:"0%",
-
+        top: "-24%",
+        right: "0%",
       }}
       onClick={onClick}
     >
@@ -73,7 +72,7 @@ const FlashSales = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow className="top-10%"/>,
+    nextArrow: <SampleNextArrow className="top-10%" />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
@@ -83,7 +82,7 @@ const FlashSales = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: false,
-          prevArrow: false
+          arrows: false,
         },
       },
       {
@@ -92,7 +91,6 @@ const FlashSales = () => {
           slidesToShow: 3,
           slidesToScroll: 2,
           initialSlide: 2,
-          
         },
       },
       {
@@ -101,7 +99,6 @@ const FlashSales = () => {
           slidesToShow: 4,
           slidesToScroll: 2,
           initialSlide: 2,
-          
         },
       },
     ],
@@ -109,19 +106,83 @@ const FlashSales = () => {
   return (
     <section className=" mt-10 lg:mt-36">
       <Container>
-        <Flex className=" justify-between lg:justify-normal lg:gap-[87px] items-end mb-10">
+        <Flex className=" justify-between gap-2 lg:justify-normal lg:gap-[87px] items-end mb-10">
           <Title subtitle="Today’s" title="Flash Sales" />
           <CountDown />
         </Flex>
         <Slider {...settings}>
-          <Product imgSRC={console} imgAlt={"console"} />
-          <Product imgSRC={keyboard} imgAlt={"keyboard"} />
-          <Product imgSRC={monitor} imgAlt={"monitor"} />
-          <Product imgSRC={chair} imgAlt={"chair"} />
-          <Product imgSRC={console} imgAlt={"console"} />
-          <Product imgSRC={keyboard} imgAlt={"keyboard"} />
-          <Product imgSRC={monitor} imgAlt={"monitor"} />
-          <Product imgSRC={chair} imgAlt={"chair"} />
+          <Product
+            discount={"-25%"}
+            name={"HAVIT HV-G92 Gamepad"}
+            prevPrice={"$160"}
+            newPrice={"$120"}
+            imgSRC={console}
+            imgAlt={"console"}
+            starCount={"88"}
+          />
+          <Product
+            discount={"-30%"}
+            name={"AK-900 Wired Keyboard"}
+            prevPrice={"$1160"}
+            newPrice={"$960"}
+            imgSRC={keyboard}
+            imgAlt={"keyboard"}
+            starCount={"75"}
+          />
+          <Product
+            discount={"-35%"}
+            name={"IPS LCD Gaming Monitor"}
+            prevPrice={"$400"}
+            newPrice={"$370"}
+            imgSRC={monitor}
+            imgAlt={"monitor"}
+            starCount={"99"}
+          />
+          <Product
+            discount={"-40%"}
+            name={"S-Series Comfort Chair "}
+            prevPrice={"$400"}
+            newPrice={"$370"}
+            imgSRC={chair}
+            imgAlt={"chair"}
+            starCount={"99"}
+          />
+          <Product
+            discount={"-25%"}
+            name={"HAVIT HV-G92 Gamepad"}
+            prevPrice={"$160"}
+            newPrice={"$120"}
+            imgSRC={console}
+            imgAlt={"console"}
+            starCount={"88"}
+          />
+          <Product
+            discount={"-30%"}
+            name={"AK-900 Wired Keyboard"}
+            prevPrice={"$1160"}
+            newPrice={"$960"}
+            imgSRC={keyboard}
+            imgAlt={"keyboard"}
+            starCount={"75"}
+          />
+          <Product
+            discount={"-35%"}
+            name={"IPS LCD Gaming Monitor"}
+            prevPrice={"$400"}
+            newPrice={"$370"}
+            imgSRC={monitor}
+            imgAlt={"monitor"}
+            starCount={"99"}
+          />
+          <Product
+            discount={"-40%"}
+            name={"S-Series Comfort Chair "}
+            prevPrice={"$400"}
+            newPrice={"$370"}
+            imgSRC={chair}
+            imgAlt={"chair"}
+            starCount={"99"}
+          />
         </Slider>
         <div className=" text-center py-8 lg:py-[60px] border-b-2 mb-8 lg:mb-20">
           <Button value={"View All Products"} />

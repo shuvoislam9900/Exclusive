@@ -69,7 +69,7 @@ const Explore = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     rows: 2,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -111,25 +111,153 @@ const Explore = () => {
           <Title subtitle="Our Products" title="Explore Our Products" />
         </div>
         <Slider {...settings}>
-          <Product imgSRC={dogFood} imgAlt={dogFood} />
-          <Product imgSRC={dogFood} imgAlt={dogFood} />
-          <Product imgSRC={camera} imgAlt={camera} />
-          <Product imgSRC={camera} imgAlt={camera} />
-          <Product imgSRC={laptop} imgAlt={laptop} />
-          <Product imgSRC={laptop} imgAlt={laptop} />
-          <Product imgSRC={cream} imgAlt={cream} />
-          <Product imgSRC={cream} imgAlt={cream} />
-          <Product imgSRC={dogFood} imgAlt={dogFood} />
-          <Product imgSRC={dogFood} imgAlt={dogFood} />
-          <Product imgSRC={camera} imgAlt={camera} />
-          <Product imgSRC={camera} imgAlt={camera} />
-          <Product imgSRC={laptop} imgAlt={laptop} />
-          <Product imgSRC={laptop} imgAlt={laptop} />
-          <Product imgSRC={cream} imgAlt={cream} />
-          <Product imgSRC={cream} imgAlt={cream} />
+          <Product
+            discount={""}
+            name={"Breed Dry Dog Food"}
+            prevPrice={""}
+            newPrice={"$100"}
+            starCount={"35"}
+            imgSRC={dogFood}
+            imgAlt={dogFood}
+          />
+          <Product
+            discount={""}
+            name={"Breed Dry Dog Food"}
+            prevPrice={""}
+            newPrice={"$100"}
+            starCount={"35"}
+            imgSRC={dogFood}
+            imgAlt={dogFood}
+          />
+          <Product
+            discount={""}
+            name={"CANON EOS DSLR Camera"}
+            prevPrice={""}
+            newPrice={"$360"}
+            starCount={"95"}
+            imgSRC={camera}
+            imgAlt={camera}
+          />
+          <Product
+            discount={""}
+            name={"CANON EOS DSLR Camera"}
+            prevPrice={""}
+            newPrice={"$360"}
+            starCount={"95"}
+            imgSRC={camera}
+            imgAlt={camera}
+          />
+          <Product
+            discount={""}
+            name={"ASUS FHD Gaming Laptop"}
+            prevPrice={""}
+            newPrice={"$700"}
+            starCount={"325"}
+            imgSRC={laptop}
+            imgAlt={laptop}
+          />
+          <Product
+            discount={""}
+            name={"ASUS FHD Gaming Laptop"}
+            prevPrice={""}
+            newPrice={"$700"}
+            starCount={"325"}
+            imgSRC={laptop}
+            imgAlt={laptop}
+          />
+          <Product
+            discount={""}
+            name={"Curology Product Set "}
+            prevPrice={""}
+            newPrice={"$500"}
+            starCount={"155"}
+            imgSRC={cream}
+            imgAlt={cream}
+          />
+          <Product
+            discount={""}
+            name={"Curology Product Set "}
+            prevPrice={""}
+            newPrice={"$500"}
+            starCount={"155"}
+            imgSRC={cream}
+            imgAlt={cream}
+          />
+          <Product
+            discount={""}
+            name={"Breed Dry Dog Food"}
+            prevPrice={""}
+            newPrice={"$100"}
+            starCount={"35"}
+            imgSRC={dogFood}
+            imgAlt={dogFood}
+          />
+          <Product
+            discount={""}
+            name={"Breed Dry Dog Food"}
+            prevPrice={""}
+            newPrice={"$100"}
+            starCount={"35"}
+            imgSRC={dogFood}
+            imgAlt={dogFood}
+          />
+          <Product
+            discount={""}
+            name={"CANON EOS DSLR Camera"}
+            prevPrice={""}
+            newPrice={"$360"}
+            starCount={"95"}
+            imgSRC={camera}
+            imgAlt={camera}
+          />
+          <Product
+            discount={""}
+            name={"CANON EOS DSLR Camera"}
+            prevPrice={""}
+            newPrice={"$360"}
+            starCount={"95"}
+            imgSRC={camera}
+            imgAlt={camera}
+          />
+          <Product
+            discount={""}
+            name={"ASUS FHD Gaming Laptop"}
+            prevPrice={""}
+            newPrice={"$700"}
+            starCount={"325"}
+            imgSRC={laptop}
+            imgAlt={laptop}
+          />
+          <Product
+            discount={""}
+            name={"ASUS FHD Gaming Laptop"}
+            prevPrice={""}
+            newPrice={"$700"}
+            starCount={"325"}
+            imgSRC={laptop}
+            imgAlt={laptop}
+          />
+          <Product
+            discount={""}
+            name={"Curology Product Set "}
+            prevPrice={""}
+            newPrice={"$500"}
+            starCount={"155"}
+            imgSRC={cream}
+            imgAlt={cream}
+          />
+          <Product
+            discount={""}
+            name={"Curology Product Set "}
+            prevPrice={""}
+            newPrice={"$500"}
+            starCount={"155"}
+            imgSRC={cream}
+            imgAlt={cream}
+          />
         </Slider>
         <div className=" text-center py-8 lg:py-[60px] lg:mb-[108px]">
-          <Button value={"View All Products"} />
+          <Button to="/shopPage" value={"View All Products"} />
         </div>
       </Container>
     </section>

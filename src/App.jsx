@@ -9,6 +9,7 @@ import {
 import Home from "./pages/Home";
 import SigningPage from "./pages/SigningPage";
 import LoginPage from "./pages/LoginPage";
+import ShopPage from "./pages/ShopPage";
 
 
 const router = createBrowserRouter(
@@ -20,8 +21,11 @@ const router = createBrowserRouter(
       <Route path="/signup" element={<RootLayout />}>
         <Route index element={<SigningPage/>}></Route>
       </Route>
-      <Route path="/Login" element={<RootLayout />}>
+      <Route path="/login" element={<RootLayout />}>
         <Route index element={<LoginPage/>}></Route>
+      </Route>
+      <Route path="/shopPage" element={<RootLayout />}>
+        <Route index element={<ShopPage/>}></Route>
       </Route>
     </>
   )

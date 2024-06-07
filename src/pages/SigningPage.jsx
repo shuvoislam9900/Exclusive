@@ -1,10 +1,10 @@
-import React from 'react'
-import SignUp from '../components/SignUp'
+import React from "react";
+import SignUp from "../components/SignUp";
+import { createBrowserRouter } from "react-router-dom";
+import LoginPage from "./LoginPage";
 
 const SigningPage = () => {
-  return (
-    <SignUp/>
-  )
-}
+  return <SignUp />;
+};
 
-export default SigningPage
+export default SigningPage;
